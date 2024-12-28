@@ -11,16 +11,16 @@ export default function Footer(){
             <div className='text-center'>
                 <h1>KEEP IN TOUCH</h1>
                 <div>
-                    <a href="#" className='text-xl mr-2' onClick={handleRefresh}><FontAwesomeIcon icon={faFacebook}/></a>
-                    <a href="#" className='text-xl mr-2' onClick={handleRefresh}><FontAwesomeIcon icon={faInstagram}/></a>
+                    <a href="#" className='text-xl mr-5' onClick={handleRefresh}><FontAwesomeIcon icon={faFacebook}/></a>
+                    <a href="#" className='text-xl mr-5' onClick={handleRefresh}><FontAwesomeIcon icon={faInstagram}/></a>
                     <a href="#" className='text-xl' onClick={handleRefresh}><FontAwesomeIcon icon={faTwitter}/></a>
                 </div>
             </div>
             <div className='text-center'>
             <h1>PAYMENT METHOD</h1>
                 <div>
-                    <a href="#" className='text-xl mr-2' onClick={handleRefresh}><FontAwesomeIcon icon={faPaypal}/></a>
-                    <a href="#" className='text-xl mr-2' onClick={handleRefresh}><FontAwesomeIcon icon={faCcVisa}/></a>
+                    <a href="#" className='text-xl mr-5' onClick={handleRefresh}><FontAwesomeIcon icon={faPaypal}/></a>
+                    <a href="#" className='text-xl mr-5' onClick={handleRefresh}><FontAwesomeIcon icon={faCcVisa}/></a>
                     <a href="#" className='text-xl' onClick={handleRefresh}><FontAwesomeIcon icon={faCreditCard}/></a>
                 </div>
             </div>

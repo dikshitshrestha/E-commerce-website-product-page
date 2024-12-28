@@ -1,13 +1,10 @@
 import Content from "./Content";
-import Footer from "./Footer";
-import Header from "./Header";
+import Hoodie from "./Hoodie";
 
 export default function App(){
   return(
     <>
-    <Header/>
-    <Content/>
-    <Footer/>
+    <Hoodie/>
     </>
   );
 }
