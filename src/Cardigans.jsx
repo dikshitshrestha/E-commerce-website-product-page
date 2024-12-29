@@ -7,9 +7,8 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { faCcVisa, faFacebook, faInstagram, faPaypal, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faCreditCard } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
-export default function Hoodie() {
+export default function Cardigans() {
     const[activeButton, setActiveButton] = useState(null);
 
     function handleClick(index) {
@@ -21,7 +20,7 @@ export default function Hoodie() {
     return(
         <div className='h-full bg-black'>
             <nav className='flex bg-slate-950 items-center justify-evenly h-16 w-full'>
-                        <Link to="/"><img src={logo} alt="Logo" className='h-9'/></Link>
+                        <a href="#"><img src={logo} alt="Logo" className='h-9'/></a>
                         <a href="#" className='text-white text-xl hover:text-slate-400'><b>Products</b></a>
                         <a href="#" className='text-white text-xl hover:text-slate-400'><b>Cart</b><FontAwesomeIcon icon={faCartShopping} size="sm" className='ml-2'/></a>
                         <a href="#" className='text-white text-xl hover:text-slate-400'><b>Wishlist</b><FontAwesomeIcon icon={faClipboardList} size="sm" className='ml-2'/></a>
@@ -41,10 +40,10 @@ export default function Hoodie() {
                     <h1 className='text-4xl'><b>Men Multi-Feature Travel Hoodie</b></h1>
                     <p className='mt-5 text-2xl text-green-900'><b>Choose your size:</b></p>
                     <div className='mt-3'>
-                        {["S","M","L","XL","XXL","XXXL"].map((label,index)=>(<button className='mr-4 h-14 w-14 border-2 rounded-full text-xl' key={index}
-                        onClick={()=>handleClick(index)} style={{backgroundColor: activeButton === index ? "red" : "white", }}>
-                            {label}
-                        </button>))}
+                       {["S","M","L","XL","XXL","XXL"].map((label,index)=>(<button key={index} className='mr-4 h-14 w-14 border-2 rounded-full text-xl' onClick={()=>handleClick(index)} 
+                       style={{backgroundColor: activeButton === index ? "red" : "white"}}>
+                        {label}
+                       </button>))}
                     </div>
                     <p className='text-2xl mt-5 text-red-900'><b>Price: Rs 2500</b></p>
                     <div className='mt-5'>
