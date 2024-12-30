@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 
 export default function SweatShirt() {
     const [activeButton, setActiveButton] = useState(null);
-
+    
     function handleClick(index){
         setActiveButton(activeButton === index ? null : index);
     }
